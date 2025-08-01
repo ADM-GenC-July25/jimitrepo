@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 18.x
+      nodejs: 20.x
   pre_build:
     commands:
       - echo In the pre_build phase...
@@ -19,5 +19,5 @@ phases:
 artifacts:
   files:
     - "**/*"
-  base-directory: "dist/admang-july25"
+  base-directory: "dist/ADMAngJuly25"
   discard-paths: no
