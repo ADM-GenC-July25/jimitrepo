@@ -16,8 +16,9 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - aws s3 sync dist/ADMAngJuly25/ s3://$S3_BUCKET_NAME --delete
 artifacts:
   files:
     - "**/*"
-  base-directory: "dist/ADMAngJuly25"
+  base-directory: "dist/ADMAngJuly25/browser"
   discard-paths: no
